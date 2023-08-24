@@ -10,6 +10,7 @@
     regexp: "{{ item.regexp }}"
     line: "{{ item.line }}"
     state: present
+    create: true
     validate: 'sshd -T -f %s'
     mode: 0644
   with_items:
