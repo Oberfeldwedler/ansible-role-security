@@ -14,7 +14,7 @@
 
 - name: Copy unattended-upgrades configuration files in place.
   template:
-    src: "{{ security_fail2ban_custom_configuration_template }}"
+    src: "{{ security_autoupdate_custom_configuration_template }}"
     dest: "/etc/apt/apt.conf.d/50unattended-upgrades"
     owner: root
     group: root
